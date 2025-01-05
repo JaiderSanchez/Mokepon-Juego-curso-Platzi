@@ -5,6 +5,7 @@
         <title>
             MOKEPON!
         </title>
+        <script src="./js/mokepon.js"></script>
     </head>
     <body>
         <h1>MOKEPON! 🔥💧🌱</h1>
@@ -21,16 +22,8 @@
             <input type="radio" name="pet" id="ratigueya"/>
             <label for="ratigueya">Ratigueya</label><br>
             
-            <!-- <input type="radio" name="attack" id="langostelvis"/> -->
-
-            <!-- Hipodoge -> Water
-            Capipepo -> Land
-            Ratigueya -> Fire
-            Langostelvis -> Water and Fire
-            Tucapalma -> Water and land
-            Pydos -> Land and Fire -->
             
-            <button>Select</button>
+            <button id="button-pet">Select</button>
         </section>
 
         <section id="select-attack">
@@ -38,9 +31,9 @@
             <p>Your pet has <span>3</span> lives</p>
             <p>The enemy's pet has <span>3</span> lives</p>
             <p>
-                <button>Fire 🔥</button>
-                <button>Water 💧</button>
-                <button>Land 🌱</button>
+                <button id="button-fire">Fire 🔥</button>
+                <button id="button-water">Water 💧</button>
+                <button id="button-land">Land 🌱</button>
             </p>
         </section>
 
@@ -49,8 +42,9 @@
         </section>
 
         <section id="reboot">
-            <button>Reboot</button>
+            <button id="button-reboot">Reboot</button>
         </section>
+        
         
     </body>
 </html>
