@@ -18,6 +18,28 @@ function selectPetPlayer() {
     } else {
         alert('Select your pet first')
     }
+
+    selectPetEnemy()
+}
+
+function selectPetEnemy() {
+    let randomAttack = random(1, 3)
+    let spanPetEnemy = document.getElementById('mascot-enemy')
+
+    if (randomAttack == 1) {
+        // Hipodoge
+        spanPetEnemy.innerHTML = 'Hipodoge'
+    } else if (randomAttack == 2) {
+        // Capipepo
+        spanPetEnemy.innerHTML = 'Capipepo'
+    } else {
+        // Ratigueya
+        spanPetEnemy.innerHTML = 'Ratigueya'
+    }
+}
+
+function random(min , max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 window.addEventListener('load', startGame)
