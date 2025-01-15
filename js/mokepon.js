@@ -6,14 +6,15 @@ function startGame() {
 function selectPetPlayer() {
     let inputHipodoge = document.getElementById('hipodoge')
     let inputCapipepo = document.getElementById('capipepo')
-    let inputRatigueya = document.getElementById('ratigueya');
+    let inputRatigueya = document.getElementById('ratigueya')
+    let spanPetPlayer = document.getElementById('mascot-player');
 
     if (inputHipodoge.checked) {
-        alert('You selected a Hipodoge')
+        spanPetPlayer.innerHTML = 'Hipodoge'
     } else if (inputCapipepo.checked) {
-        alert('You selected a Capipepo')
+        spanPetPlayer.innerHTML = 'Capipepo'
     } else if (inputRatigueya.checked) {
-        alert('You selected a Ratigueya')
+        spanPetPlayer.innerHTML = 'Ratigueya'
     } else {
         alert('Select your pet first')
     }
